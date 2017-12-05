@@ -11,13 +11,13 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        class="course.labs.fragmentslab.FriendsFragment" />
+        class="com.ssdd.myapplication.FriendsFragment" />
 
     <fragment
         android:id="@+id/feed_frag"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="3"
-        class="course.labs.fragmentslab.FeedFragment" />
+        class="com.ssdd.myapplication.FeedFragment" />
 
 </LinearLayout>

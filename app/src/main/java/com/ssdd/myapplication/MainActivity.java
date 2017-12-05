@@ -1,6 +1,7 @@
 package com.ssdd.myapplication;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,9 +26,17 @@ public class MainActivity extends Activity implements
 			
 			mFriendsFragment = new FriendsFragment();
 
-			//TODO 1 - add the FriendsFragment to the fragment_container
+			// = findViewById(R.id.fragment_container);
+
+			//DO 1 - add the FriendsFragment to the fragment_container
 
 			//return inflater.inflate(R.layout.fragment_main, container, false);
+			FragmentManager fragmentManager = getFragmentManager();
+			FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+			fragmentTransaction.add(R.id.fragment_container, mFriendsFragment);
+			fragmentTransaction.commit();
+
 			
 
 		} else {

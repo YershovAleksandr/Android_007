@@ -26,8 +26,8 @@ public class MainActivity extends Activity implements
 			mFriendsFragment = new FriendsFragment();
 
 			//TODO 1 - add the FriendsFragment to the fragment_container
-			
-			
+
+			//return inflater.inflate(R.layout.fragment_main, container, false);
 			
 
 		} else {
